@@ -1,0 +1,52 @@
+
+.py-1 .fa-google-plus-g:hover {
+    color: #4285f3; /* Thay your_desired_hover_color bằng mã màu hoặc tên màu bạn muốn sử dụng khi chạm vào icon */
+  }
+  /* CSS */
+  .py-1 svg path:first-child:hover {
+    fill: #dc3545; /* Thay your_desired_hover_color bằng mã màu hoặc tên màu bạn muốn sử dụng khi di chuột vào */
+  }
+  /* CSS */
+  /* CSS */
+  a.py-1 img {
+    filter: brightness(10%);
+  }
+  
+  a.py-1 img:hover {
+    filter: brightness(100%);
+  }
+  /* CSS */
+  
+  i.fa-pinterest {
+    color: #f26600;
+  }
+  i.fa-facebook{
+    color: #f26600;
+  }
+  
+  i.fa-instagram {
+    color: #f26600;
+  }
+  i.fa-linkedin {
+    color: #f26600;
+  }
+  .social-media a:hover i.fa-facebook {
+    color: #0866ff; /* Màu cho biểu tượng Facebook khi di chuột vào */
+  }
+  
+  .social-media a:hover i.fa-pinterest {
+    color: #e60023; /* Màu cho biểu tượng Pinterest khi di chuột vào */
+  }
+  
+  .social-media a:hover i.fa-instagram {
+    color: #e5345f; /* Màu cho biểu tượng Instagram khi di chuột vào */
+  }
+  
+  .social-media a:hover i.fa-linkedin {
+    color: #0a66c2; /* Màu cho biểu tượng LinkedIn khi di chuột vào */
+  }
+  #text_rule{
+    font-size: 12px;
+    font-weight: 400;
+  
+  }

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<body>
+    <section class="container" style="margin-top: 140px;">
+        <div class="row">
+        <article class="col-sm-8">  
+          <div class="header_tasbar col">
+            <h6 class="text-color-gray fw-bold" style="font-size: 14px;">Trang Chủ / Du Lịch {{productcard[index].area}} / Du Lịch {{productcard[index].location}} / {{productcard[index].tourTitle}}</h6>
+        </div>
+          <h2 class="Title_detail_product text-color-orange">Du Lịch {{productcard[index].tourTitle}}</h2>
+          <div class="row img_detail_product p-0">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"width="10%"  >
+              <div class="carousel-inner">
+                <div class="carousel-item" ng-class="{active: $index === 0}" ng-repeat="thumbnail in productcard[index].thumbnail">
+                    <img ng-src="chitietsp/{{thumbnail}}.jpg" class="d-block img-fluid" alt="Slide {{$index + 1}}">
+                </div>
+             </div>
+
+              <ul class="carousel-indicators">
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="{{$index}}" ng-class="{active: $index === 0}" id="slidectsp" ng-repeat="thumbnail in productcard[index].thumbnail">
+                    <img ng-src="chitietsp/{{thumbnail}}.jpg" class="d-block w-100" alt="Ảnh nhỏ {{$index + 1}}">
+                </li>
+            </ul>
+
+          </div>
+          <div class="phandanhgia">
+          <div class="row danhgiasp mt-2">
+            <h5 class="fs-4"><i class="fa-regular fa-comments" style="color: #FFD43B;"></i> Đánh Giá Gần Đây</h5>
+            <div class="sodanhgia d-flex justify-content-between">
+              <div class="sosaodanhgia d-flex align-items-center">
+                <h2 style="margin-right: 5px;">4.8</h2>
+                <p style="font-size: smaller; align-self: flex-end;">/5</p>
+                <div class="sosao d-flex ms-1">
+                  <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star fa-lg" style="color: #FFD43B;"></i>
+                  
+                </div>
+                <p class="soluongnguoidanhgia m-0">1K+ người đánh giá</p>
+            </div>
+              <p><a href="#" style="text-decoration: none; color: black;">Đọc tất cả bài đánh giá</a></p>
+            </div>
+          </div>
+        </div>
+        <nav class="container mt-1">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="cards-wrapper">
+                  <div class="card">
+                    <div class="card-body">
+                       <div class="user" style="display: flex;-webkit-box-align: center;align-items: center;-webkit-box-pack: start;justify-content: flex-start;">
+                        <div class="user_img">
+                            <i class="fa-solid fa-user fa-2xl" style="color: #FFD43B;"></i>
+                           </div>
+                           <div class="time_user mt-2" style="margin-left: 8px;">
+                            <h5 class="user_name" style="font-size: 14px;">Người Dùng LGT</h5>
+                            <p>31/10/2021</p>
+                           </div>
+                       </div>
+                      <p class="card-text">Vincent là người hướng dẫn hoàn hảo. Anh ấy chăm sóc chúng tôi rất tốt trong suốt chuyến đi, liên tục kiểm tra nhóm và đảm bảo rằng mọi người đều ổn.</p>  
+                    </div>
+                  </div>
+                  <div class="card d-none d-md-block">
+                    <div class="card-body">
+                        <div class="user" style="display: flex;-webkit-box-align: center;align-items: center;-webkit-box-pack: start;justify-content: flex-start;">
+                         <div class="user_img">
+                             <i class="fa-solid fa-user fa-2xl" style="color: #FFD43B;"></i>
+                            </div>
+                            <div class="time_user mt-2" style="margin-left: 8px;">
+                             <h5 class="user_name" style="font-size: 14px;">Người Dùng LGT</h5>
+                             <p>31/10/2021</p>
+                            </div>
+                        </div>
+                       <p class="card-text">Vincent là người hướng dẫn hoàn hảo. Anh ấy chăm sóc chúng tôi rất tốt trong suốt chuyến đi, liên tục kiểm tra nhóm và đảm bảo rằng mọi người đều ổn.</p>  
+                     </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="cards-wrapper">
+                  <div class="card">
+                    <div class="card-body">
+                        <div class="user" style="display: flex;-webkit-box-align: center;align-items: center;-webkit-box-pack: start;justify-content: flex-start;">
+                         <div class="user_img">
+                             <i class="fa-solid fa-user fa-2xl" style="color: #FFD43B;"></i>
+                            </div>
+                            <div class="time_user mt-2" style="margin-left: 8px;">
+                             <h5 class="user_name" style="font-size: 14px;">Người Dùng LGT</h5>
+                             <p>31/10/2021</p>
+                            </div>
+                        </div>
+                       <p class="card-text">Vincent là người hướng dẫn hoàn hảo. Anh ấy chăm sóc chúng tôi rất tốt trong suốt chuyến đi, liên tục kiểm tra nhóm và đảm bảo rằng mọi người đều ổn.</p>  
+                     </div>
+                  </div>
+                  <div class="card d-none d-md-block">
+                    <div class="card-body">
+                        <div class="user" style="display: flex;-webkit-box-align: center;align-items: center;-webkit-box-pack: start;justify-content: flex-start;">
+                         <div class="user_img">
+                             <i class="fa-solid fa-user fa-2xl" style="color: #FFD43B;"></i>
+                            </div>
+                            <div class="time_user mt-2" style="margin-left: 8px;">
+                             <h5 class="user_name" style="font-size: 14px;">Người Dùng LGT</h5>
+                             <p>31/10/2021</p>
+                            </div>
+                        </div>
+                       <p class="card-text">Vincent là người hướng dẫn hoàn hảo. Anh ấy chăm sóc chúng tôi rất tốt trong suốt chuyến đi, liên tục kiểm tra nhóm và đảm bảo rằng mọi người đều ổn.</p>  
+                     </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>  
+        </nav>
+        <div class="thongtinsanpham">
+          <div class="thongtinsanpham_title">
+            <h4>Thông tin về dịch vụ</h4>
+            <p>Tự do khám phá Đảo Ngọc với LGT Travel Phú Quốc, thoả sức vui chơi, nghỉ dưỡng tại hòn đảo xinh đẹp.
+              Với  LGT Travel Phú Quốc, bạn có thể thoả sức vui chơi, tham quan tại</p>
+              <li class="list">Vinwonders Phú Quốc</li>
+              <li class="list">bảo Tàng Gấu</li>
+              <li class="list">A fourth item</li>
+              <li class="list">Sea Walking at Phú Quốc Nautulus Namaste</li>
+              <p>Nhân cơ hội này mình cùng người thương vi vu đến Đảo Ngọc ngay thôi cả nhà ơi!</p>
+              <img src="chitietsp/{{ productcard[index].thumbnail[0] }}.jpg" class="img-fluid rounded" alt="">
+
+              <p class="text-color-gray" style="font-size: 13px;">Ngắm nhìn toàn cảnh Nam Đảo Phú Quốc trong vắt trên tuyến cáp treo 03 dây dài nhất Việt Nam, kéo dài 30 phút từ Đảo An Thới đến Đảo Hòn Thơm ở Sun World Hòn Thơm Nature Park</p>
+              <img src="chitietsp/{{ productcard[index].thumbnail[1] }}.jpg" class="img-fluid rounded" alt="">
+              <p class="text-color-gray" style="font-size: 13px;">Trải nghiệm cảm giác "nhốt người thả thú", tham quan đời sống hoang dã của các loài động vật, hay cho các bạn hươu cao cổ, dê ăn,...</p>
+              <img src="chitietsp/{{ productcard[index].thumbnail[2] }}.jpg" class="img-fluid rounded" alt="">
+              <p class="text-color-gray" style="font-size: 13px;">Vui chơi thả ga với hàng trăm hoạt động vui chơi, giải trí cùng với các chương trình diễu hành, văn nghệ đặc sắc tại VinWonders Phú Quốc</p>
+              <img src="chitietsp/{{ productcard[index].thumbnail[3] }}.jpg" class="img-fluid rounded" alt="">
+          </div>
+          <div class="cauhoi mt-2">
+            <h4><i class="fa-solid fa-list fa-sm"></i> Câu Hỏi Thường Gặp</h4>
+            <h6 class="mt-2 text-color-orange">Có vé trẻ em cho hoạt động này không?*</h6>
+            <p>Trẻ em cao từ 99 cm trở xuống được phép tham gia hoạt động này miễn phí. Trẻ em cao trên 99 cm sẽ được coi như người lớn và phải mua vé người lớn.*
+              <h6 class="mt-2 text-color-orange">Bạn còn câu hỏi khác?*</h6>
+              <button type="button" class="btn background-color-nhat text-color-orange  ">Hỗ Trợ Khách Hàng</button>
+              <h4 class="mt-4">Hấp dẫn không kém</h4>
+              <h6 class="mt-1">Các vật dụng cần thiết khi du lịch ở Phú Quốc</h6>
+              <p class="text-color-gray">Khách sạn Phú Quốc | Dịch vụ đưa đón sây bay Phú Quốc</p>
+              <h6 class="mt-1">Khám phá những trải nghiệm tại địa phương</h6>
+              <p class="text-color-gray">Tour Phú Quốc | Tour Phú Quốc trong ngày</p>
+              <h6>Xu hướng nổi bật trên LGT Travel</h6>
+              <p class="text-color-gray">#top4tour  #topdulichtrongnuoc  #top1dulichbiendao</p>
+            </p>
+          </div>
+        </div>
+        </article>
+        <aside class="col-sm-4" style="margin-top: 85px;">
+          <div class="container background-color-gray" style="border-radius: 10px; padding-top: 10px; padding-bottom: 10px;">
+            <form>
+              <h4>Vui lòng chọn ngày & Dịch vụ</h4>
+              <p class="text-color-gray" style="font-size: 12px;">Vui lòng chọn ngày đi tour</p>
+              <button type="button" id="dateButton" class="btn background-color-orange text-white">
+                <i class="fa-solid fa-calendar-days"></i> Vui lòng chọn ngày
+              </button>
+              
+              <input type="date" id="datetimeInput" class="form-control" style="display: none;">
+              <div class="Modal_1 mt-2">
+                <!-- Button trigger modal -->
+    <button type="button" class="btn bg-white text-color-orange" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <span class="badge background-color-orange text-white">Giảm giá</span> Bảng Khuyến Mãi <i class="fa-solid fa-angles-right"></i>
+    </button><div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content" style="border-radius: 10px;">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Chọn các gói dịch vụ</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">  
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label d-flex" for="flexRadioDefault2">
+                  <p>Tour Ngày,Tour Ghép,Hướng Dẫn Viên Tiếng Anh  Không Miễn Phí</p><h6>đ.2.999.999 <span class="badge background-color-nhat text-color-orange " style="float: right; font-size: 11px;">Giảm 10%</span> </h6>
+                </label>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn background-color-orange text-white " style="border-radius: 10px; font-size: 12px; font-weight: 500;">Đồng Ý</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bangthanhtoan">
+                <div class="loaitour">
+                  <p class="text-color-gray mb-2">Loại tour</p>
+                  <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off" checked>
+                  <label class="btn btn-outline-success" for="success-outlined">Tour Ngày</label>
+
+                  <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off">
+                  <label class="btn btn-outline-danger" for="danger-outlined">Tour 2N 1D</label>
+                </div>
+                <div class="kieutour">
+                  <p class="text-color-gray mb-2">Du lịch riêng tư hay theo đoàn</p>
+                  <input type="radio" class="btn-check" name="options-outlined_1" id="warning-outlined" autocomplete="off" checked>
+                  <label class="btn btn-outline-warning" for="warning-outlined">Tour Ghép</label>
+
+                  <input type="radio" class="btn-check" name="options-outlined_1" id="info-outlined" autocomplete="off">
+                  <label class="btn btn-outline-info" for="info-outlined">Tour Riêng</label>
+                </div>
+              </div>
+              <div class="mb-3 mt-2">
+                <p class="text-color-gray" style="font-size: 14px;">Số Lượng</p>
+                <div class="list-group">                    
+                  <div class="list-item_nguoilon">
+                    <li class="list-group-item list-group-item" style="border-radius: 10px;">Người Lớn
+                      <div class="input-group">
+                        <input type="number" ng-model="p.numberOfChildren" min="0" class="form-control form-control-sm" ng-change="calculateTotalPrice(p)">
+                    </div>
+                  </li>
+                  </div>
+                  <div class="list-item_nguoilon">
+                    <li class="list-group-item list-group-item" style="border-radius: 10px;">Trẻ Em(4-9)<div class="input-group">
+                      <input type="number" ng-model="p.numberOfAdults" min="1" class="form-control form-control-sm" ng-change="calculateTotalPrice(p)">
+                    </li>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3" style="display: flex; justify-content: space-between; align-items: center;">
+                <div class="giasp d-flex align-items-center">
+                  <h6 class="giasp fw-bold fs-5">₫ {{productcard[index].price | number}}</h6>
+                  <p class="giamgiasp text-color-orange" style="font-size: 12px;">Giảm 112,515₫</p>
+                </div>
+                <button type="submit"ng-click="addProduct(p[index])"  class="btn btn-primary">Thanh Toán</button>
+              </div>
+              
+            </form>
+          </div>
+        </aside>
+      </div>
+    </section>
+    <script>
+        document.getElementById('dateButton').addEventListener('click', function() {
+
+document.getElementById('datetimeInput').style.display = 'block';
+
+
+document.getElementById('datetimeInput').addEventListener('input', function() {
+
+  var selectedDateTime = document.getElementById('datetimeInput').value;
+
+  // Gắn giá trị lên text của nút button
+  document.getElementById('dateButton').innerHTML = '<i class="fa-solid fa-calendar-days"></i> ' + selectedDateTime;
+
+  //  ngày-giờ
+  document.getElementById('datetimeInput').style.display = 'none';
+});
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+.nav-item {
+    border-radius: 46px;
+  }
+  .nav-item:hover {
+    background-color: #f5f5f5;
+  }
+  .layout-header-top {
+    border-bottom: 1px solid #eeeeee;
+  }
+  .text-color-gray {
+color: #666666; 
+}
+.background-color-footer{
+  background-color: #eeeeee;
+}
+.text-color-orange{
+  color: #ff5b00;
+}
+.background-color-orange{
+  background-color: #ff5b00;
+}
+.background-color-nhat{
+  background-color: #fff0e5;
+}
+.text-color-blue{
+  color: #2a4bf2;
+}
+.background-color-blue-nhat{
+  background-color: #7898f9;
+}
+/* CSS */
+/* CSS */
+
+.Nav_Title h3 {
+margin-left: 110px;
+}
+
+@media (max-width: 768px) {
+.Nav_Title h3 {
+    margin-left: 0;  
+    text-align: center;  
+}
+}
+.align-middle {
+display: flex;
+align-items: center;
+}
+.background-color-gray{
+background-color: #eeeeee;
+}
+
+.list-item_nguoilon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px; 
+}
+
+.list-group-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input-group{
+  width: 47%;}

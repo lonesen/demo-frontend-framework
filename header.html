@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .nav-item {
+        border-radius: 46px;
+      }
+      .nav-item:hover {
+        background-color: #f5f5f5;
+      }
+      .layout-header-top {
+        border-bottom: 1px solid #eeeeee;
+      }
+      .text-color-gray {
+    color: #666666; 
+    overflow: hidden;
+}
+    </style>
+</head>
+<body>
+    <header class="header_default fixed-top bg-white">
+        <div class="layout-header-top mt-1">
+          <div class="header-default-right container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <div class="container">
+                <a class="navbar-brand" href="#!home">
+                  <img
+                    src="img/LGTLogots_2.png"
+                    width="130px"
+                    aria-current="page"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+                <form class="d-flex col">
+                  <input
+                    class="form-control me-2 rounded-pill"
+                    type="search"
+                    placeholder="Tìm Kiếm"
+                    ng-model="keySearch"
+                            ng-change="search(keySearch)"
+                    aria-label="Search"
+                  />
+                </form>
+                <button
+                  class="navbar-toggler"type="button"data-bs-toggle="collapse"data-bs-target="#navbarNav"aria-controls="navbarNav"aria-expanded="false"aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  class="collapse navbar-collapse justify-content-end"
+                  id="navbarNav"
+                  style="font-size: 12px; font-weight: 500"
+                >
+                  <ul class="navbar-nav menu">
+                    <li class="nav-item d-flex">
+                      <img src="img/vietnam.png" width="25" alt=""/>
+                      <a class="nav-link active" href="#">VI</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">Trợ Giúp</a>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#!giohang"
+                          >Giỏ Hàng<span class="badge rounded-pill bg-danger float-end">{{ cartQuantity }}</span></a>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#!dangki">Đăng Ký</a>
+                    </li>
+                    <li class="nav-item bg-warning">
+                      <a class="nav-link active" href="#!login">Đăng Nhập</a>
+                    </li>
+                  </ul>
+                  
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="layout-header-bootom">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+              <div
+                class="collapse navbar-collapse justify-content-start"
+                id="navbarNav"
+                style="font-size: 14px; font-weight: 550"
+              >
+                <ul class="navbar-nav menu">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#"
+                      >Bạn không biết đi đâu để giải trí
+                      <i class="fa-solid fa-question" style="color: #dc3545"></i></a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Du lịch trong nước</a>
+                    <div class="dropdown-menu rounded-3 " aria-labelledby="navbarDropdown">
+                      <ul>
+                          <li><a class="dropdown-item text-primary" href="#">Miền Bắc</a></li>
+                          <li><a class="dropdown-item" id="text_menu_dropdown" href="#">Mộc Châu-Sơn La</a></li>
+                          <li><a class="dropdown-item" id="text_menu_dropdown" href="#">Mai Châu-Hòa Bình</a></li>
+                          <li><a class="dropdown-item" id="text_menu_dropdown" href="#">Tam Đảo-Vĩnh Phúc</a></li>
+                          <li><a class="dropdown-item" id="text_menu_dropdown" href="#">Sapa-Lào Cai</a></li>
+                          <li><a class="dropdown-item" id="text_menu_dropdown" href="#">Vịnh Hạ Long-Quảng Ninh</a></li>
+                      </ul>
+                      <ul>
+                          <li><a class="dropdown-item text-warning" href="#">Miền Trung</a></li>
+                          <li><a class="dropdown-item" id="text_menu_dropdown" href="#">Bà Nà Hills-Đà Nẵng</a></li>
+                          <li><a class="dropdown-item" id="text_menu_dropdown" href="#">Đảo Lý Sơn-Quảng Ngãi</a></li>
+                          <li><a class="dropdown-item" id="text_menu_dropdown" href="#">Đảo Phú Quý-Bình Thuận</a></li>
+                          <li><a class="dropdown-item" id="text_menu_dropdown" href="#">Động Thiên Đường-Quảng Bình</a></li>
+                          <li><a class="dropdown-item" id="text_menu_dropdown" href="#">Rừng Quốc Gia Pù Mát,Con Cuông-Nghệ An</a></li>
+                          <li><a class="dropdown-item" id="text_menu_dropdown" href="#">Đà Lạt-Lâm Đồng</a></li>
+                      </ul>
+                      <ul>                
+                          <li><a class="dropdown-item text-success" href="#"> Miền Nam</a></li>
+                          <li><a class="dropdown-item" id="text_menu_dropdown" href="#">Vùng Biển Tứ Bình-Khánh Hòa</a></li>
+                          <li><a class="dropdown-item" id="text_menu_dropdown" href="#">Dinh Độc Lập,Nhà Thờ Đức Bà,Địa Đạo Củ Chi-TP.HCM</a></li>
+                          <li><a class="dropdown-item" id="text_menu_dropdown" href="#">Níu Bà Đen,Hồ Dầu Tiếng-Tây Ninh</a></li>
+                          <li><a class="dropdown-item" id="text_menu_dropdown" href="#">Núi Cấm-Khu Du Lịch Vạn Hương Mai-An Giang</a></li>
+                          <li><a class="dropdown-item" id="text_menu_dropdown" href="#">Vườn Quốc Gia Tràm Chim-Đồng Tháp</a></li>
+                          <li><a class="dropdown-item" id="text_menu_dropdown" href="#">Khu Du Lịch Sinh Thái Phú An Khang-Bến Tre</a></li>
+                      </ul>
+
+                  </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Du lịch nước ngoài</a>
+                    <div class="dropdown-menu rounded-3 " aria-labelledby="navbarDropdown">
+                      <ul>
+                          <li><a class="dropdown-item text-primary" href="#">Châu Âu</a></li>
+                          <li><a class="dropdown-item" id="text_menu_dropdown" href="#">Bảo tàng Louvre,Paris-Pháp</a></li>
+                          <li><a class="dropdown-item" id="text_menu_dropdown" href="#">Kristiansund-Na Uy</a></li>
+                          <li><a class="dropdown-item" id="text_menu_dropdown" href="#">Suomenlinna, thị trấn Nokia,-Phần Lan</a></li>
+                          <li><a class="dropdown-item" id="text_menu_dropdown" href="#">Đảo Kizhi-Nga</a></li>
+                          <li><a class="dropdown-item" id="text_menu_dropdown" href="#">Prague-Cộng Hòa Sec</a></li>
+                      </ul>
+                      <ul>
+                          <li><a class="dropdown-item text-warning" href="#">Châu Á</a></li>
+                          <li><a class="dropdown-item" id="text_menu_dropdown" href="#">Seol-Hàn Quốc</a></li>
+                          <li><a class="dropdown-item" id="text_menu_dropdown" href="#">Tokyo-Nhật Bản</a></li>
+                          <li><a class="dropdown-item" id="text_menu_dropdown" href="#">Thượng Hải-Trung Quốc</a></li>
+                          <li><a class="dropdown-item" id="text_menu_dropdown" href="#">BangKok-Thái Lan</a></li>
+                          <li><a class="dropdown-item" id="text_menu_dropdown" href="#">Kuala Lumpur-Malaisia</a></li>
+                          <li><a class="dropdown-item" id="text_menu_dropdown" href="#">Hà Nội,Đà Nẵng,TPHCM-Việt Nam</a></li>
+                      </ul>
+                      <ul>
+                        <li><a class="dropdown-item text-warning" href="#">Châu Mỹ</a></li>
+                        <li><a class="dropdown-item" id="text_menu_dropdown" href="#">Grand Canyon-Hoa Kỳ</a></li>
+                        <li><a class="dropdown-item" id="text_menu_dropdown" href="#">Kim tự tháp mặt trời Teotihuacan-Mexico</a></li>
+                        <li><a class="dropdown-item" id="text_menu_dropdown" href="#">Quảng trường Cách mạng Havana-CuBa</a></li>
+                        <li><a class="dropdown-item" id="text_menu_dropdown" href="#">Tượng Chúa Kitô Cứu Thế-Brazil  </a></li>
+                        <li><a class="dropdown-item" id="text_menu_dropdown" href="#">Quần thể di tích Sacsayhuamán-Peru</a></li>
+                        <li><a class="dropdown-item" id="text_menu_dropdown" href="#">Đảo Baltra-Ecuador</a></li>
+                        <li><a class="dropdown-item" id="text_menu_dropdown" href="#">Đảo Baltra-Ecuador</a></li>
+                    </ul>
+                  </div>
+                  </li>
+                  <li class="nav-item"></li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Du lịch giá rẻ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Top5 điểm du lịch</a>
+                  </li>
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+</body>
+</html>

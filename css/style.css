@@ -1,0 +1,157 @@
+.navlink a:hover .dropdown-menu{
+    display: inline-flex;
+    z-index: 1;
+}
+/* Kiểu dáng mặc định cho input */
+.form-control {
+
+  transition: border-color 0.3s; 
+}
+
+/* Kiểu dáng khi hover */
+.form-control:hover {
+  border-color: #ff5b00; /
+}
+
+/* card_Sale */
+/* .card{
+    width: 100%;
+    height: 60%;
+    transform-style: preserve-3d;
+    border: none;
+    perspective: 500px;
+    background-color: inherit;
+}
+.card .box{
+    
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: white;
+
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    backface-visibility: hidden;
+}
+
+.card .box.thumnal img{
+    width: 100%;
+    height: 100%;
+
+    border-radius: 15px;
+}
+.card:hover .box.thumnal{
+    transform: rotateY(180deg);
+}
+.card .box.content{
+    position: absolute;
+    background: #fff;
+    transform: rotateY(180deg);
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+}
+.card .box.content{
+    position: absolute;
+    
+}
+.card:hover .box.content{
+    transform: rotateY(360deg);
+}
+
+.card .box.thumnal h3,
+.card .box.thumnal h4 {
+    position: absolute;
+    top: 20px; 
+    left: 20px; 
+    color: white; 
+    z-index: 1;
+}
+
+.card .box.thumnal h3,
+.card .box.thumnal h4 {
+    z-index: 1;
+} */
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#card_model {
+  position: relative; /* Make the card position relative */
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  border-radius: 10px;
+  overflow: hidden; /* Hide overflow content within the card */
+}
+
+/* .card img {
+  width: 100%; 
+  height: auto; 
+  display: block; 
+} */
+
+#card-body {
+  position: absolute; /* Position the card body relative to the card */
+  bottom: 0; /* Position it at the bottom of the card */
+  width: 100%; /* Take up the full width of the card */
+
+  padding: 1em;
+}
+
+#card_model {
+  border-radius: 10px; /* Adjust the border-radius for consistency */
+}
+
+#carousel-inner {
+  padding: 1em;
+}
+
+#carousel-control-prev,
+#carousel-control-next {
+  background-color: #e1e1e1;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (min-width: 768px) {
+    #card_model img {
+    height: 12em;
+  }
+}
+#card_model{
+  transition: transform 0.3s ease-in-out;
+}
+#card_model:hover{
+  transform: translateY(-10px);
+}
+#card_model_gt{
+  transition: transform 0.3s ease-in-out;
+}
+#card_model_gt:hover{
+  transform: translateY(-10px);
+}
+
+#card_product{
+  overflow: hidden;
+  cursor: pointer;
+}
+#card_product:hover{
+  box-shadow: 0px 0px 5px #f1df8d;
+}
+#card_product:hover img {
+  transform: scale(1.1);
+}
+#card_product>img {
+  height: 10%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+/* phan card danh gia sp */

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+  
+  
+  
+  
+      </style>
+</head>
+<body>
+        <!-- Code_MENu -->
+        <nav style="margin-top: 120px;">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="margin: auto;">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="{{$index}}" ng-class="{active: $index === 0}" ng-repeat="p in products" aria-label="Slide {{$index + 1}}"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item" ng-class="{active: $index === 0}" ng-repeat="p in products">
+                        <img src="img/{{p.image}}.png" class="d-block w-100" style="max-height: 550px; object-fit: cover;" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </nav>
+        <nav class="container mt-5">
+            <div class="container">
+              <div class="Nav_Title">
+                <h3>ƯU ĐÃI DÀNH CHO BẠN</h3>
+              </div>
+            </div>
+            <div id="carouselExampleControls" class="carousel slide"   data-bs-interval="false">
+              <div class="carousel-inner" id="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="cards-wrapper d-flex justify-content-center align-items-center">
+                    <div class="card" id="card_model">
+                      <img src="images/card_md-Eu.jpg" class="card-img-top img-fluid" alt="...">
+                      <div class="card-body" id="card-body">
+                        <h5 class="card-title text-white fs-3">Du Lịch Châu Âu</h5>
+                        
+                        <a href="#" class="btn  background-color-nhat text-color-orange fw-400">Đặt ngay</a>
+                      </div>
+                    </div>
+                    <div class="card d-none d-md-block" id="card_model">
+                      <img src="images/card_md-Singgapore.jpg" class="card-img-top" alt="...">
+                      <div class="card-body" id="card-body">
+                        <h5 class="card-title text-white fs-3">Khám Phá Singapore</h5>
+      
+                        <a href="#" class="btn background-color-blue-nhat text-white">Đặt ngay</a>
+                      </div>
+                    </div>
+                    <div class="card d-none d-md-block" id="card_model">
+                      <img src="images/card_md_Ny.jpg" class="card-img-top" alt="...">
+                      <div class="card-body" id="card-body">
+                        <h5 class="card-title text-white fs-3">Hành Trình NewYork</h5>
+      
+                        <a href="#" class="btn background-color-nhat text-color-orange">Đặt trước!</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="cards-wrapper d-flex justify-content-center align-items-center">
+                    <div class="card" id="card_model">
+                      <img src="img/card_md_Saigondasua.jpg" class="card-img-top" alt="...">
+                      <div class="card-body" id="card-body">
+                        <h5 class="card-title text-white fs-3">Ngao Du Sài Gòn</h5>
+                        <a href="#" class="btn  background-color-nhat text-color-orange fw-400">Đặt ngay</a>
+                      </div>
+                    </div>
+                    <div class="card d-none d-md-block" id="card_model">
+                      <img src="images/card_md-Singgapore.jpg" class="card-img-top" alt="...">
+                      <div class="card-body" id="card-body">
+                        <h5 class="card-title text-white fs-3">Khám Phá Singapore</h5>
+      
+                        <a href="#" class="btn background-color-blue-nhat text-white">Đặt ngay</a>
+                      </div>
+                    </div>
+                    <div class="card d-none d-md-block" id="card_model">
+                      <img src="images/card_md-Singgapore.jpg" class="card-img-top" alt="...">
+                      <div class="card-body" id="card-body">
+                        <h5 class="card-title text-white fs-3">Khám Phá Singapore</h5>
+      
+                        <a href="#" class="btn background-color-blue-nhat text-white">Đặt ngay</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" id="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" id="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" id="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" id="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </nav>
+          <section class="mt-1">
+
+            <div class="container col-sm-9" >
+              <h3 class="text-center text-color-gray" style="font-size: 42px; font-weight: lighter; position: relative;">
+          <span>TOUR DU LỊCH NỔI BẬT</span>
+          <hr class="line-text">
+      </h3>
+     
+
+          
+              <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-3 mt-3" ng-repeat="p in productcard | filter: keySearch | orderBy : sort | limitTo: 8 : page:begin">
+
+                    <div class="card" id="card_product">
+                        <img src="images/{{p.image}}.jpg" class="card-img-top img-fluid w-70" alt="...">
+                        
+                        <div class="card-body">
+                            <div class="diadiem text-color-gray">Tour <i class="fa-solid fa-location-dot fa-2xs"></i> {{p.location}}</div>
+                            <h5 class="card-title text-black">Du lịch {{p.tourTitle}}</h5>
+                            <h6 class="ngaykhoihanh text-color-gray"> Ngày Khởi Hành: {{p.date}}</h6>
+                            <div class="rate_point text-color-gray" style="font-size: 14px;" ><i class="fa-solid fa-star" style="color: #FFD43B;"></i> {{p.rating}} Đã đặt được</div>
+                            <div class="text-color-gray d-flex"> <h6 class="me-1">Chỉ </h6><h6 class="fw-bold text-dark">đ </h6><h6 class="price fw-bold text-danger ms-1">{{p.price | number}}</h6>
+                              <h6 class="text-color-orange ms-1 mb-3 text-decoration-line-through " style="font-size: 14px;">Giảm {{p.salePrice | number}}</h6>
+                            </div>                      
+                            <div class="d-flex justify-content-between ">
+                                <a href="#!detailproductravel/{{p.id}}" class="btn btn-primary">Xem chi Tiết</a>
+                                <a href="#" ng-click="addProduct(p)" class="btn btn-primary">Đặt Tour <i class="fa-solid fa-cart-plus"></i></a>
+      
+                            </div>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+            <a href="#!timkiem"class="btn btn-warning mt-2" style="float: right;">Xem tất cả</a>
+            </div>
+            <nav class="container mt-5">
+                <div class="container">
+                  <div class="Nav_Title">
+                    <h3>BẠN MUỐN ĐI ĐÂU ?</h3>
+                  </div>
+                </div>
+                <div id="carouselExampleControls1" class="carousel slide"  data-bs-interval="false">
+                  <div class="carousel-inner" id="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="cards-wrapper d-flex justify-content-center align-items-center" id="cards-wrapper">
+                        <div class="card col-sm-12 col-md-2" id="card_model_gt">
+                          <img src="card_di_choi/dalatdasua.jpg" class="card-img-top img-fluid" alt="...">
+                          <div class="card-body" id="card-body_gt">
+                            <h5 class="card-title text-white fs-3">Đà Lạt</h5>
+                          </div>
+                        </div>
+                        <div class="card d-none d-md-block col-sm-2 col-md-2" id="card_model_gt">
+                          <img src="card_di_choi/danangdasua.jpg" class="card-img-top" alt="...">
+                          <div class="card-body" id="card-body_gt">
+                            <h5 class="card-title text-white fs-3">Đà Nẵng</h5>
+                          </div>
+                        </div>
+                        <div class="card d-none d-md-block col-sm-2 col-md-2" id="card_model_gt">
+                          <img src="card_di_choi/halongdasua.jpg" class="card-img-top" alt="...">
+                          <div class="card-body" id="card-body_gt">
+                            <h5 class="card-title text-white fs-3">Hạ Long</h5>
+                          </div>
+                        </div>
+                        <div class="card d-none d-md-block col-sm-2 col-md-2" id="card_model_gt">
+                          <img src="card_di_choi/hanoidasua.jpg" class="card-img-top" alt="...">
+                          <div class="card-body" id="card-body_gt">
+                            <h5 class="card-title text-white fs-3">Hà Nội</h5>
+                          </div>
+                        </div> 
+                        <div class="card d-none d-md-block col-sm-2 col-md-2" id="card_model_gt">
+                          <img src="card_di_choi/hanquocdasua.jpg" class="card-img-top" alt="...">
+                          <div class="card-body" id="card-body_gt">
+                            <h5 class="card-title text-white fs-3">Hàn Quốc</h5>
+                          </div>
+                        </div>
+                        <div class="card d-none d-md-block col-sm-2 col-md-2" id="card_model_gt">
+                          <img src="card_di_choi/huedasua.jpg" class="card-img-top" alt="...">
+                          <div class="card-body" id="card-body_gt">
+                            <h5 class="card-title text-white fs-3">Huế</h5>
+                          </div>
+                        </div>
+                         
+                         
+                                         
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="cards-wrapper d-flex justify-content-center align-items-center" id="cards-wrapper">
+                        <div class="card d-none d-md-block col-sm-2 col-md-2" id="card_model_gt">
+                          <img src="card_di_choi/mydasua.jpg" class="card-img-top" alt="...">
+                          <div class="card-body" id="card-body_gt">
+                            <h5 class="card-title text-white fs-3">American</h5>
+                          </div>
+                        </div>
+                        <div class="card d-none d-md-block" id="card_model_gt">
+                          <img src="card_di_choi/nhatdasua.jpg" class="card-img-top" alt="...">
+                          <div class="card-body" id="card-body_gt">
+                            <h5 class="card-title text-white fs-3">Nhật</h5>
+                          </div>
+                        </div>
+                        <div class="card d-none d-md-block" id="card_model_gt">
+                          <img src="card_di_choi/nuocanhdasua.jpg" class="card-img-top" alt="...">
+                          <div class="card-body" id="card-body_gt">
+                            <h5 class="card-title text-white fs-3">Anh Quốc</h5>
+                          </div>
+                        </div>
+                        <div class="card d-none d-md-block" id="card_model_gt">
+                          <img src="card_di_choi/phuquydasua.jpg" class="card-img-top" alt="...">
+                          <div class="card-body" id="card-body_gt">
+                            <h5 class="card-title text-white fs-3">Phú Quý</h5>
+                          </div>
+                        </div>
+                        <div class="card d-none d-md-block" id="card_model_gt">
+                          <img src="card_di_choi/thailandasua.jpg" class="card-img-top" alt="...">
+                          <div class="card-body" id="card-body_gt">
+                            <h5 class="card-title text-white fs-3">Thái Lan</h5>
+                          </div>
+                        </div>
+                        <div class="card d-none d-md-block" id="card_model_gt">
+                          <img src="card_di_choi/tphcmdasua.jpg" class="card-img-top" alt="...">
+                          <div class="card-body" id="card-body_gt">
+                            <h5 class="card-title text-white fs-3">Sài Gòn</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="cards-wrapper d-flex justify-content-center align-items-center" id="cards-wrapper">
+                        <div class="card d-none d-md-block col-sm-2 col-md-2" id="card_model_gt">
+                          <img src="card_di_choi/trungquocdasua.jpg" class="card-img-top" alt="...">
+                          <div class="card-body" id="card-body_gt">
+                            <h5 class="card-title text-white fs-3">Tung Của</h5>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <button class="carousel-control-prev dieukhientien" id="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" id="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next dieukhienlui" id="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" id="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </nav>
+              <div class="container">
+                <div class="row mt-4">
+                            <div class="col ">
+                                <nav aria-label="Page navigation">
+                                  <ul class="pagination  justify-content-center">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item active" aria-current="page">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                
+                                </nav>
+                                
+                            </div>
+                        </div>
+              </div>
+            </section>    
+
+</body>
+<script>
+  
+</script>
+</html>

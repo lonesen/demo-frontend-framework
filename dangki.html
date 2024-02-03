@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font/css/all.min.css">
+    <title>Đăng Ký</title>
+    <style>
+      .nav-item {
+        border-radius: 46px;
+      }
+      .nav-item:hover {
+        background-color: #f5f5f5;
+      }
+      .layout-header-top {
+        border-bottom: 1px solid #eeeeee;
+      }
+      .text-color-gray {
+    color: #666666; 
+}
+    .background-color-footer{
+      background-color: #eeeeee;
+    }
+    .card-img-left {
+  width: 45%;
+  /* Link to your background image using in the property below! */
+  background: scroll center url('images/dangki.jpg');
+  background-size: cover;
+}
+
+.btn-login {
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  padding: 0.75rem 1rem;
+}
+
+.btn-google {
+  color: white !important;
+  background-color: #ea4335;
+}
+
+.btn-facebook {
+  color: white !important;
+  background-color: #3b5998;
+}
+    </style>
+  </head>
+  <body>
+    
+    <!-- Code_MENu -->
+    <section class="container" style="margin-top: 150px;">
+        <div class="row">
+            <h3 class="text-center text-color-gray " style="font-size: 42px; font-weight: lighter; "><span>BẠN LÀ NGƯỜI ĐAM MÊ DU LỊCH? HÃY ĐẾN VỚI CHÚNG TÔI</span>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 col-xl-9 mx-auto">
+              <div class="card flex-row my-5 border-0 shadow rounded-3 overflow-hidden">
+                <div class="card-img-left d-none d-md-flex">
+                  <!-- Background image for card set in CSS! -->
+                </div>
+                <div class="card-body p-4 p-sm-5">
+                  <h5 class="card-title text-center mb-5 fw-light fs-5">Đăng Ký Tài Khoản</h5>
+                  <form ng-submit="register()">
+      
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="floatingInputUsername" placeholder="myusername" ng-model="newUser.name" required autofocus>
+                      <label for="floatingInputUsername">Họ Và Tên</label>
+                    </div>
+      
+                    <div class="form-floating mb-3">
+                      <input type="email" class="form-control" id="floatingInputEmail" ng-model="newUser.email" placeholder="name@example.com">
+                      <label for="floatingInputEmail">Email </label>
+                    </div>
+      
+                    <hr>
+      
+                    <div class="form-floating mb-3">
+                      <input type="password" class="form-control" id="floatingPassword" placeholder="Password"  ng-model="newUser.password">
+                      <label for="floatingPassword">Mật Khẩu</label>
+                    </div>
+      
+                    <div class="form-floating mb-3">
+                      <input type="password" class="form-control" id="floatingPasswordConfirm" placeholder="Confirm Password" ng-model="newUser.confirmPassword">
+                      <label for="floatingPasswordConfirm">Xác Nhận Mật Khẩu</label>
+                    </div>
+      
+                    <div class="d-grid mb-2">
+                      <button class="btn btn-lg btn-primary btn-login fw-bold text-uppercase" type="submit">Register</button>
+                    </div>
+      
+                    <a class="d-block text-center mt-2 small" href="#">Have an account? Sign In</a>
+                    <hr class="my-4">
+      
+                    <div class="d-grid mb-2">
+                      <button class="btn btn-lg btn-google btn-login fw-bold text-uppercase" type="submit">
+                        <i class="fab fa-google me-2"></i> Sign up with Google
+                      </button>
+                    </div>
+                    <div class="d-grid">
+                      <button class="btn btn-lg btn-facebook btn-login fw-bold text-uppercase" type="submit">
+                        <i class="fab fa-facebook-f me-2"></i> Sign up with Facebook
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section> 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

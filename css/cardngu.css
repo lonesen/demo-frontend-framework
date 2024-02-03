@@ -1,0 +1,54 @@
+#cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#card_model_gt {
+  width: 180px;
+  position: relative; /* Make the card position relative */
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  border-radius: 10px;
+  overflow: hidden; /* Hide overflow content within the card */
+}
+
+/* .card img {
+  width: 100%; 
+  height: auto; 
+  display: block; 
+} */
+
+#card-body_gt{
+  position: absolute; /* Position the card body relative to the card */
+  bottom: 0; /* Position it at the bottom of the card */
+  width: 100%; /* Take up the full width of the card */
+
+  padding: 1em;
+}
+
+#card_model_gt {
+  border-radius: 10px; /* Adjust the border-radius for consistency */
+}
+
+#carousel-inner_gt {
+  padding: 1em;
+}
+
+.dieukhientien,
+.dieukhienlui {
+  background-color: #e1e1e1;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+@media (min-width: 768px) {
+    #card_model_gt img {
+    height: 17em;
+  }
+}
+
